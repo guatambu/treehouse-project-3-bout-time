@@ -9,12 +9,18 @@
 import Foundation
 import GameKit
 
+
+// protocol to establish timeline events
+
 protocol TimeLineEvent {
     var order: Int { get }
     var event: String { get}
     var year: Int { get }
     var link: String { get }
 }
+
+
+// class setting up timeline objects
 
 class TimelineSource: TimeLineEvent {
     var order: Int
@@ -29,6 +35,8 @@ class TimelineSource: TimeLineEvent {
         self.link = link
     }
 }
+
+//  events as instances of timeline source
 
 let event1 = TimelineSource(order: 1, event: "Assassination of William McKinley", year: 1901, link: "https://en.wikipedia.org/wiki/Assassination_of_William_McKinley")
 let event2 = TimelineSource(order: 2, event: "First controlled heavier-than-air flight of the Wright Brothers", year: 1903, link: "https://en.wikipedia.org/wiki/Wright_Brothers")
@@ -61,6 +69,8 @@ let event28 = TimelineSource(order: 28, event: "Intergovernmental Panel on Clima
 let event29 = TimelineSource(order: 29, event: "The first Website is online available to the public", year: 1991, link: "https://en.wikipedia.org/wiki/Website")
 let event30 = TimelineSource(order: 30, event: "End of apartheid in South Africa and Nelson Mandela elected", year: 1994, link: "https://en.wikipedia.org/wiki/Apartheid")
 
+
+// struct to establish array of events and randomness functionality
 
 struct TimelineEvents {
     
