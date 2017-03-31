@@ -6,6 +6,8 @@
 //  Copyright © 2017 leme group. All rights reserved.
 //
 
+// adds options for round corners and border specs in interface builder
+
 import UIKit
 
 @IBDesignable
