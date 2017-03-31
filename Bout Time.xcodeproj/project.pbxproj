@@ -12,6 +12,9 @@
 		FAEFB8AC1E8E4441008E794E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAEFB8AA1E8E4441008E794E /* Main.storyboard */; };
 		FAEFB8AE1E8E4441008E794E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAEFB8AD1E8E4441008E794E /* Assets.xcassets */; };
 		FAEFB8B11E8E4441008E794E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAEFB8AF1E8E4441008E794E /* LaunchScreen.storyboard */; };
+		FAEFB8B91E8E445E008E794E /* RoundedCornersLAbel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFB8B81E8E445E008E794E /* RoundedCornersLAbel.swift */; };
+		FAEFB8BD1E8EDF4F008E794E /* BoutTimeAssets in Resources */ = {isa = PBXBuildFile; fileRef = FAEFB8BC1E8EDF4F008E794E /* BoutTimeAssets */; };
+		FAEFB8BF1E8EE187008E794E /* ViewRoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFB8BE1E8EE187008E794E /* ViewRoundedCorners.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		FAEFB8AD1E8E4441008E794E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAEFB8B01E8E4441008E794E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAEFB8B21E8E4441008E794E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAEFB8B81E8E445E008E794E /* RoundedCornersLAbel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCornersLAbel.swift; sourceTree = "<group>"; };
+		FAEFB8BC1E8EDF4F008E794E /* BoutTimeAssets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = BoutTimeAssets; sourceTree = "<group>"; };
+		FAEFB8BE1E8EE187008E794E /* ViewRoundedCorners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewRoundedCorners.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +63,10 @@
 				FAEFB8A61E8E4441008E794E /* AppDelegate.swift */,
 				FAEFB8A81E8E4441008E794E /* ViewController.swift */,
 				FAEFB8AA1E8E4441008E794E /* Main.storyboard */,
+				FAEFB8B81E8E445E008E794E /* RoundedCornersLAbel.swift */,
+				FAEFB8BE1E8EE187008E794E /* ViewRoundedCorners.swift */,
 				FAEFB8AD1E8E4441008E794E /* Assets.xcassets */,
+				FAEFB8BC1E8EDF4F008E794E /* BoutTimeAssets */,
 				FAEFB8AF1E8E4441008E794E /* LaunchScreen.storyboard */,
 				FAEFB8B21E8E4441008E794E /* Info.plist */,
 			);
@@ -125,6 +134,7 @@
 			files = (
 				FAEFB8B11E8E4441008E794E /* LaunchScreen.storyboard in Resources */,
 				FAEFB8AE1E8E4441008E794E /* Assets.xcassets in Resources */,
+				FAEFB8BD1E8EDF4F008E794E /* BoutTimeAssets in Resources */,
 				FAEFB8AC1E8E4441008E794E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +147,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAEFB8A91E8E4441008E794E /* ViewController.swift in Sources */,
+				FAEFB8B91E8E445E008E794E /* RoundedCornersLAbel.swift in Sources */,
 				FAEFB8A71E8E4441008E794E /* AppDelegate.swift in Sources */,
+				FAEFB8BF1E8EE187008E794E /* ViewRoundedCorners.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
