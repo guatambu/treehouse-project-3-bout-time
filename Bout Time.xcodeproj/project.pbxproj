@@ -16,6 +16,7 @@
 		FAEFB8BD1E8EDF4F008E794E /* BoutTimeAssets in Resources */ = {isa = PBXBuildFile; fileRef = FAEFB8BC1E8EDF4F008E794E /* BoutTimeAssets */; };
 		FAEFB8BF1E8EE187008E794E /* ViewRoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFB8BE1E8EE187008E794E /* ViewRoundedCorners.swift */; };
 		FAEFB8C11E8F0574008E794E /* TimelineSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFB8C01E8F0574008E794E /* TimelineSource.swift */; };
+		FAEFB8C31E8F13EC008E794E /* AudioClips in Resources */ = {isa = PBXBuildFile; fileRef = FAEFB8C21E8F13EC008E794E /* AudioClips */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		FAEFB8BC1E8EDF4F008E794E /* BoutTimeAssets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = BoutTimeAssets; sourceTree = "<group>"; };
 		FAEFB8BE1E8EE187008E794E /* ViewRoundedCorners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewRoundedCorners.swift; sourceTree = "<group>"; };
 		FAEFB8C01E8F0574008E794E /* TimelineSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineSource.swift; sourceTree = "<group>"; };
+		FAEFB8C21E8F13EC008E794E /* AudioClips */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AudioClips; path = BoutTimeAssets/AudioClips; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,10 +70,11 @@
 				FAEFB8AA1E8E4441008E794E /* Main.storyboard */,
 				FAEFB8B81E8E445E008E794E /* RoundedCornersLAbel.swift */,
 				FAEFB8BE1E8EE187008E794E /* ViewRoundedCorners.swift */,
-				FAEFB8AD1E8E4441008E794E /* Assets.xcassets */,
-				FAEFB8BC1E8EDF4F008E794E /* BoutTimeAssets */,
 				FAEFB8AF1E8E4441008E794E /* LaunchScreen.storyboard */,
 				FAEFB8B21E8E4441008E794E /* Info.plist */,
+				FAEFB8AD1E8E4441008E794E /* Assets.xcassets */,
+				FAEFB8C21E8F13EC008E794E /* AudioClips */,
+				FAEFB8BC1E8EDF4F008E794E /* BoutTimeAssets */,
 			);
 			path = "Bout Time";
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAEFB8B11E8E4441008E794E /* LaunchScreen.storyboard in Resources */,
+				FAEFB8C31E8F13EC008E794E /* AudioClips in Resources */,
 				FAEFB8AE1E8E4441008E794E /* Assets.xcassets in Resources */,
 				FAEFB8BD1E8EDF4F008E794E /* BoutTimeAssets in Resources */,
 				FAEFB8AC1E8E4441008E794E /* Main.storyboard in Resources */,
