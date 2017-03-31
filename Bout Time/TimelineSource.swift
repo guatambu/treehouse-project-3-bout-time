@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import GameKit
 
 protocol TimeLineEvent {
     var order: Int { get }
@@ -61,10 +62,39 @@ let event29 = TimelineSource(order: 29, event: "The first Website is online avai
 let event30 = TimelineSource(order: 30, event: "End of apartheid in South Africa and Nelson Mandela elected", year: 1994, link: "https://en.wikipedia.org/wiki/Apartheid")
 
 
-struct TimelineArray {
+struct TimelineEvents {
+    
+    let timelineEvent = "0"
+    
+    
     var timelineArray = [
      event1, event2, event3, event4, event5, event6, event7, event8, event9, event10, event11, event12, event13, event14, event15, event16, event17, event18, event19, event20, event21, event22, event23, event24, event25, event26, event27, event28, event29, event30
     ]
+    
+    
+    func randomQuestion1() -> TimeLineEvent {
+        let randomIndexNumber = GKRandomSource.sharedRandom().nextInt(upperBound: timelineArray.count)
+        return timelineArray[randomIndexNumber]
+    }
+    
+    
+    /// func generates a random number based on questionAnswerArray's contents
+    func randomIndexNumberGenerator() -> Int {
+        let randomIndexNumber = GKRandomSource.sharedRandom().nextInt(upperBound: timelineArray.count)
+        return randomIndexNumber
+    }
+    
+    /// func generates question from instance of questionAnswerArray based on provided index value
+    func randomQuestion(at index: Int) -> TimelineSource {
+        let randomQuestion = timelineArray[index]
+        return randomQuestion
+    }
+    
+    /// func removes question from instance of questionAnswerArray based on provided index value
+    mutating func arrayItemRemover(at index: Int) -> TimelineSource {
+        let removedArrayItem = timelineArray.remove(at: index)
+        return removedArrayItem
+    }
 
 }
 
