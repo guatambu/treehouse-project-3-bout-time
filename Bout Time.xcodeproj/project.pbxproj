@@ -15,6 +15,7 @@
 		FAEFB8B91E8E445E008E794E /* RoundedCornersLAbel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFB8B81E8E445E008E794E /* RoundedCornersLAbel.swift */; };
 		FAEFB8BD1E8EDF4F008E794E /* BoutTimeAssets in Resources */ = {isa = PBXBuildFile; fileRef = FAEFB8BC1E8EDF4F008E794E /* BoutTimeAssets */; };
 		FAEFB8BF1E8EE187008E794E /* ViewRoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFB8BE1E8EE187008E794E /* ViewRoundedCorners.swift */; };
+		FAEFB8C11E8F0574008E794E /* TimelineSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFB8C01E8F0574008E794E /* TimelineSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		FAEFB8B81E8E445E008E794E /* RoundedCornersLAbel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCornersLAbel.swift; sourceTree = "<group>"; };
 		FAEFB8BC1E8EDF4F008E794E /* BoutTimeAssets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = BoutTimeAssets; sourceTree = "<group>"; };
 		FAEFB8BE1E8EE187008E794E /* ViewRoundedCorners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewRoundedCorners.swift; sourceTree = "<group>"; };
+		FAEFB8C01E8F0574008E794E /* TimelineSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				FAEFB8A61E8E4441008E794E /* AppDelegate.swift */,
 				FAEFB8A81E8E4441008E794E /* ViewController.swift */,
+				FAEFB8C01E8F0574008E794E /* TimelineSource.swift */,
 				FAEFB8AA1E8E4441008E794E /* Main.storyboard */,
 				FAEFB8B81E8E445E008E794E /* RoundedCornersLAbel.swift */,
 				FAEFB8BE1E8EE187008E794E /* ViewRoundedCorners.swift */,
@@ -150,6 +153,7 @@
 				FAEFB8B91E8E445E008E794E /* RoundedCornersLAbel.swift in Sources */,
 				FAEFB8A71E8E4441008E794E /* AppDelegate.swift in Sources */,
 				FAEFB8BF1E8EE187008E794E /* ViewRoundedCorners.swift in Sources */,
+				FAEFB8C11E8F0574008E794E /* TimelineSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

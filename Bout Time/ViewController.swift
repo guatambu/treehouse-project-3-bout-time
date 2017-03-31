@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Bout Time
 //
-//  Created by Kelly Johnson on 3/31/17.
+//  Created by Michael Guatambu Davis on 3/31/17.
 //  Copyright © 2017 leme group. All rights reserved.
 //
 
