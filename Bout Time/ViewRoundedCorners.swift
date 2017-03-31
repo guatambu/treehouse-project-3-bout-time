@@ -31,12 +31,5 @@ class ViewRoundedCorners: UIView {
             self.layer.borderColor = borderColor.cgColor
         }
     }
-        
-    //   @IBInspectable var verticalPad: CGFloat = 0 {
-    //
-    //   }
-    //   @IBInspectable var horizontalPad: CGFloat = 0 {
-    //
-    //   }
-        
+    
 }
