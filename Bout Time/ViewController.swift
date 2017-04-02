@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var timelineDisplay3: UILabel!
     @IBOutlet weak var timelineDisplay4: UILabel!
     @IBOutlet weak var instructions: UILabel!
+    @IBOutlet weak var finalScore: UILabel!
+    @IBOutlet weak var yourScore: UILabel!
 
 // timeline event options buttons in UIViews IBActions wiring
 // timelineEvent1 UIView
