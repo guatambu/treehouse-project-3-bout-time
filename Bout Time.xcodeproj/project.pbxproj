@@ -17,6 +17,7 @@
 		FAEFB8BF1E8EE187008E794E /* ViewRoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFB8BE1E8EE187008E794E /* ViewRoundedCorners.swift */; };
 		FAEFB8C11E8F0574008E794E /* TimelineSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFB8C01E8F0574008E794E /* TimelineSource.swift */; };
 		FAEFB8C31E8F13EC008E794E /* AudioClips in Resources */ = {isa = PBXBuildFile; fileRef = FAEFB8C21E8F13EC008E794E /* AudioClips */; };
+		FAEFB8C51E909D65008E794E /* TimerStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFB8C41E909D65008E794E /* TimerStruct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		FAEFB8BE1E8EE187008E794E /* ViewRoundedCorners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewRoundedCorners.swift; sourceTree = "<group>"; };
 		FAEFB8C01E8F0574008E794E /* TimelineSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineSource.swift; sourceTree = "<group>"; };
 		FAEFB8C21E8F13EC008E794E /* AudioClips */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AudioClips; path = BoutTimeAssets/AudioClips; sourceTree = "<group>"; };
+		FAEFB8C41E909D65008E794E /* TimerStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerStruct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				FAEFB8AA1E8E4441008E794E /* Main.storyboard */,
 				FAEFB8B81E8E445E008E794E /* RoundedCornersLAbel.swift */,
 				FAEFB8BE1E8EE187008E794E /* ViewRoundedCorners.swift */,
+				FAEFB8C41E909D65008E794E /* TimerStruct.swift */,
 				FAEFB8AF1E8E4441008E794E /* LaunchScreen.storyboard */,
 				FAEFB8B21E8E4441008E794E /* Info.plist */,
 				FAEFB8AD1E8E4441008E794E /* Assets.xcassets */,
@@ -153,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAEFB8C51E909D65008E794E /* TimerStruct.swift in Sources */,
 				FAEFB8A91E8E4441008E794E /* ViewController.swift in Sources */,
 				FAEFB8B91E8E445E008E794E /* RoundedCornersLAbel.swift in Sources */,
 				FAEFB8A71E8E4441008E794E /* AppDelegate.swift in Sources */,
