@@ -7,8 +7,23 @@
 //
 
 import UIKit
+import GameKit
+import AudioToolbox
 
 class ViewController: UIViewController {
+// let's set up our necessary variables and respective instances
+    let roundssPerRound = 6
+    var roundsPlayed = 0
+    var correctAnswers = 0
+    var randomIndexNumber: Int = 0
+    var timelineSource = TimelineSource()
+    var currentRound = TimelineEvent()
+    var removedArrayItem = TimelineEvent()
+    var correctDing: SystemSoundID = 0
+    var incorrectBuzz: SystemSoundID = 0
+    
+    
+    
 // timeline event options display UIView IBOutlets wiring
     @IBOutlet weak var timelineDisplay1: UILabel!
     @IBOutlet weak var timelineDisplay2: UILabel!
@@ -19,6 +34,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var yourScore: UILabel!
 
 // timeline event options buttons in UIViews IBActions wiring
+    
 // timelineEvent1 UIView
     @IBAction func downFullButton(_ sender: UIButton) {
     }
@@ -37,18 +53,18 @@ class ViewController: UIViewController {
     }
 
 // Next Round Correct Button wiring
-    @IBAction func nextRoundSuccess(_ sender: UIButton) {
-    }
-    
-// Next Round Incorrect Button wiring 
-    @IBAction func nextRoundFail(_ sender: UIButton) {
-    }
-    
-// Play Again Button wiring
-    @IBAction func palyAgain(_ sender: UIButton) {
+    @IBAction func nextRoundCorrectButton(_ sender: UIButton) {
     }
 
-    
+// Next Round Incorrect Button wiring 
+    @IBAction func nextRoundIncorrectButton(_ sender: UIButton) {
+    }
+
+// Play Again Button wiring
+    @IBAction func playAgainButton(_ sender: UIButton) {
+    }
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -66,8 +82,35 @@ class ViewController: UIViewController {
         }
     }
     
+    func displayQuestion() {
+        randomIndexNumber = timelineSource.randomIndexNumberGenerator()
+        currentRound = timelineSource.randomQuestion(at: randomIndexNumber)
+        removedArrayItem = timelineSource.arrayItemRemover(at: randomIndexNumber)
+        timelineDisplay1.text = currentRound.event
+        //playAgainButton.isHidden = true
+    }
     
-
+    //audio sounds functions setup
+    func loadCorrectDing() {
+        let pathToSoundFile = Bundle.main.path(forResource: "CorrectDing", ofType: "wav")
+        let soundURL = URL(fileURLWithPath: pathToSoundFile!)
+        AudioServicesCreateSystemSoundID(soundURL as CFURL, &correctDing)
+    }
+    
+    func playCorrectDing() {
+        AudioServicesPlaySystemSound(correctDing)
+    }
+    
+    func loadIncorrectBuzz() {
+        let pathToSoundFile = Bundle.main.path(forResource: "IncorrectBuzz", ofType: "wav")
+        let soundURL = URL(fileURLWithPath: pathToSoundFile!)
+        AudioServicesCreateSystemSoundID(soundURL as CFURL, &incorrectBuzz)
+    }
+    
+    func playIncorrectBuzz() {
+        AudioServicesPlaySystemSound(incorrectBuzz)
+    }
+    
 
 }
 

@@ -18,6 +18,8 @@
 		FAEFB8C11E8F0574008E794E /* TimelineSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFB8C01E8F0574008E794E /* TimelineSource.swift */; };
 		FAEFB8C31E8F13EC008E794E /* AudioClips in Resources */ = {isa = PBXBuildFile; fileRef = FAEFB8C21E8F13EC008E794E /* AudioClips */; };
 		FAEFB8C51E909D65008E794E /* TimerStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFB8C41E909D65008E794E /* TimerStruct.swift */; };
+		FAEFB8C71E92D57A008E794E /* CorrectDing.wav in Resources */ = {isa = PBXBuildFile; fileRef = FAEFB8C61E92D57A008E794E /* CorrectDing.wav */; };
+		FAEFB8C91E92D580008E794E /* IncorrectBuzz.wav in Resources */ = {isa = PBXBuildFile; fileRef = FAEFB8C81E92D580008E794E /* IncorrectBuzz.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		FAEFB8C01E8F0574008E794E /* TimelineSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineSource.swift; sourceTree = "<group>"; };
 		FAEFB8C21E8F13EC008E794E /* AudioClips */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AudioClips; path = BoutTimeAssets/AudioClips; sourceTree = "<group>"; };
 		FAEFB8C41E909D65008E794E /* TimerStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerStruct.swift; sourceTree = "<group>"; };
+		FAEFB8C61E92D57A008E794E /* CorrectDing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = CorrectDing.wav; path = BoutTimeAssets/AudioClips/CorrectDing.wav; sourceTree = "<group>"; };
+		FAEFB8C81E92D580008E794E /* IncorrectBuzz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = IncorrectBuzz.wav; path = BoutTimeAssets/AudioClips/IncorrectBuzz.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,8 @@
 				FAEFB8C41E909D65008E794E /* TimerStruct.swift */,
 				FAEFB8AF1E8E4441008E794E /* LaunchScreen.storyboard */,
 				FAEFB8B21E8E4441008E794E /* Info.plist */,
+				FAEFB8C61E92D57A008E794E /* CorrectDing.wav */,
+				FAEFB8C81E92D580008E794E /* IncorrectBuzz.wav */,
 				FAEFB8AD1E8E4441008E794E /* Assets.xcassets */,
 				FAEFB8C21E8F13EC008E794E /* AudioClips */,
 				FAEFB8BC1E8EDF4F008E794E /* BoutTimeAssets */,
@@ -142,6 +148,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAEFB8B11E8E4441008E794E /* LaunchScreen.storyboard in Resources */,
+				FAEFB8C91E92D580008E794E /* IncorrectBuzz.wav in Resources */,
+				FAEFB8C71E92D57A008E794E /* CorrectDing.wav in Resources */,
 				FAEFB8C31E8F13EC008E794E /* AudioClips in Resources */,
 				FAEFB8AE1E8E4441008E794E /* Assets.xcassets in Resources */,
 				FAEFB8BD1E8EDF4F008E794E /* BoutTimeAssets in Resources */,
