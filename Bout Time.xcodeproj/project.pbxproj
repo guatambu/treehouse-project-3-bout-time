@@ -20,6 +20,7 @@
 		FAEFB8C51E909D65008E794E /* TimerStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFB8C41E909D65008E794E /* TimerStruct.swift */; };
 		FAEFB8C71E92D57A008E794E /* CorrectDing.wav in Resources */ = {isa = PBXBuildFile; fileRef = FAEFB8C61E92D57A008E794E /* CorrectDing.wav */; };
 		FAEFB8C91E92D580008E794E /* IncorrectBuzz.wav in Resources */ = {isa = PBXBuildFile; fileRef = FAEFB8C81E92D580008E794E /* IncorrectBuzz.wav */; };
+		FAEFB8CB1E92E1C7008E794E /* GameSound1.wav in Resources */ = {isa = PBXBuildFile; fileRef = FAEFB8CA1E92E1C7008E794E /* GameSound1.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		FAEFB8C41E909D65008E794E /* TimerStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerStruct.swift; sourceTree = "<group>"; };
 		FAEFB8C61E92D57A008E794E /* CorrectDing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = CorrectDing.wav; path = BoutTimeAssets/AudioClips/CorrectDing.wav; sourceTree = "<group>"; };
 		FAEFB8C81E92D580008E794E /* IncorrectBuzz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = IncorrectBuzz.wav; path = BoutTimeAssets/AudioClips/IncorrectBuzz.wav; sourceTree = "<group>"; };
+		FAEFB8CA1E92E1C7008E794E /* GameSound1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = GameSound1.wav; path = BoutTimeAssets/AudioClips/GameSound1.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				FAEFB8AF1E8E4441008E794E /* LaunchScreen.storyboard */,
 				FAEFB8B21E8E4441008E794E /* Info.plist */,
 				FAEFB8C61E92D57A008E794E /* CorrectDing.wav */,
+				FAEFB8CA1E92E1C7008E794E /* GameSound1.wav */,
 				FAEFB8C81E92D580008E794E /* IncorrectBuzz.wav */,
 				FAEFB8AD1E8E4441008E794E /* Assets.xcassets */,
 				FAEFB8C21E8F13EC008E794E /* AudioClips */,
@@ -153,6 +156,7 @@
 				FAEFB8C31E8F13EC008E794E /* AudioClips in Resources */,
 				FAEFB8AE1E8E4441008E794E /* Assets.xcassets in Resources */,
 				FAEFB8BD1E8EDF4F008E794E /* BoutTimeAssets in Resources */,
+				FAEFB8CB1E92E1C7008E794E /* GameSound1.wav in Resources */,
 				FAEFB8AC1E8E4441008E794E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

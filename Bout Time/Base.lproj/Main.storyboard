@@ -194,6 +194,16 @@
                                 <rect key="frame" x="35.5" y="531" width="343" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HQj-dj-1Vg">
+                                        <rect key="frame" x="47" y="13" width="250" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                        <state key="normal" image="next_round_fail.png"/>
+                                        <connections>
+                                            <action selector="nextRoundCorrectButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J0e-bQ-zrs"/>
+                                            <action selector="nextRoundFail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fe6-xo-0UB"/>
+                                            <action selector="nextRoundIncorrectButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xPv-Va-xga"/>
+                                        </connections>
+                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9pe-jg-EPM">
                                         <rect key="frame" x="91" y="8" width="160" height="70"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
@@ -207,16 +217,6 @@
                                         <state key="normal" image="next_round_success.png"/>
                                         <connections>
                                             <action selector="nextRoundCorrectButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Cg-f6-Sly"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HQj-dj-1Vg">
-                                        <rect key="frame" x="47" y="13" width="250" height="60"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
-                                        <state key="normal" image="next_round_fail.png"/>
-                                        <connections>
-                                            <action selector="nextRoundCorrectButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J0e-bQ-zrs"/>
-                                            <action selector="nextRoundFail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fe6-xo-0UB"/>
-                                            <action selector="nextRoundIncorrectButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xPv-Va-xga"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shake to complete" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qe7-4h-Bq0">
@@ -259,8 +259,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="correctNextRound" destination="OeA-D6-9iY" id="2PT-ln-lUa"/>
                         <outlet property="finalScore" destination="lGs-GN-GR8" id="R8q-hn-Cjg"/>
+                        <outlet property="incorrectNextRound" destination="HQj-dj-1Vg" id="gJZ-Cu-Dyy"/>
                         <outlet property="instructions" destination="Qe7-4h-Bq0" id="7Qq-xp-BWz"/>
+                        <outlet property="playAgain" destination="SsI-sM-BJN" id="crv-xO-WjI"/>
                         <outlet property="timelineDisplay1" destination="Puq-Wl-50c" id="5oc-J4-kdG"/>
                         <outlet property="timelineDisplay2" destination="2X2-5Y-2XT" id="hvk-IU-1Ye"/>
                         <outlet property="timelineDisplay3" destination="Xzx-Fm-Dkq" id="NDi-7a-YiC"/>

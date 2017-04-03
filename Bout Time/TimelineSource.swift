@@ -97,9 +97,9 @@ class TimelineSource {
     }
     
     /// func generates question from instance of questionAnswerArray based on provided index value
-    func randomQuestion(at index: Int) -> TimelineEvent {
-        let randomQuestion = timelineArray[index]
-        return randomQuestion
+    func randomEvent(at index: Int) -> TimelineEvent {
+        let randomEvent = timelineArray[index]
+        return randomEvent
     }
     
     /// func removes question from instance of questionAnswerArray based on provided index value
