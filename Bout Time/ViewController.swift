@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     var correctDing: SystemSoundID = 0
     var incorrectBuzz: SystemSoundID = 0
     var gameSound1: SystemSoundID = 0
+    var claps1: SystemSoundID = 0
     
     
     
@@ -85,6 +86,13 @@ class ViewController: UIViewController {
         incorrectNextRound.isHidden = true
         loadGameStartSound()
         playGameStartSound()
+        //downFull.isHidden = false
+        //upFull.isHidden = false
+        //upHalf1.isHidden = false
+        //upHalf2.isHidden = false
+        //downHalf1.isHidden = false
+        //downHalf2.isHidden = false
+        
         
     }
 
@@ -99,41 +107,48 @@ class ViewController: UIViewController {
         }
     }
     
+    //MARK: these funcitons are not very DRY but they get the job done.  to be refactored
     func eventGeneratorTimlineDisplay1() {
+        var event1: TimelineEvent
         randomIndexNumber = timelineSource.randomIndexNumberGenerator()
-        currentRound = timelineSource.randomEvent(at: randomIndexNumber)
+        event1 = timelineSource.randomEvent(at: randomIndexNumber)
         removedArrayItem = timelineSource.arrayItemRemover(at: randomIndexNumber)
-        timelineDisplay1.text = currentRound.event
+        timelineDisplay1.text = event1.event
         //playAgainButton.isHidden = true
     }
     
     func eventGeneratorTimlineDisplay2() {
+        var event2: TimelineEvent
         randomIndexNumber = timelineSource.randomIndexNumberGenerator()
-        currentRound = timelineSource.randomEvent(at: randomIndexNumber)
+        event2 = timelineSource.randomEvent(at: randomIndexNumber)
         removedArrayItem = timelineSource.arrayItemRemover(at: randomIndexNumber)
-        timelineDisplay2.text = currentRound.event
+        timelineDisplay2.text = event2.event
         //playAgainButton.isHidden = true
     }
     
     func eventGeneratorTimlineDisplay3() {
+        var event3: TimelineEvent
         randomIndexNumber = timelineSource.randomIndexNumberGenerator()
-        currentRound = timelineSource.randomEvent(at: randomIndexNumber)
+        event3 = timelineSource.randomEvent(at: randomIndexNumber)
         removedArrayItem = timelineSource.arrayItemRemover(at: randomIndexNumber)
-        timelineDisplay3.text = currentRound.event
+        timelineDisplay3.text = event3.event
         //playAgainButton.isHidden = true
     }
     
     func eventGeneratorTimlineDisplay4() {
+        var event4: TimelineEvent
         randomIndexNumber = timelineSource.randomIndexNumberGenerator()
-        currentRound = timelineSource.randomEvent(at: randomIndexNumber)
+        event4 = timelineSource.randomEvent(at: randomIndexNumber)
         removedArrayItem = timelineSource.arrayItemRemover(at: randomIndexNumber)
-        timelineDisplay4.text = currentRound.event
+        timelineDisplay4.text = event4.event
         //playAgainButton.isHidden = true
     }
     
 
     
-    //audio sounds functions setup
+    // audio sounds functions setup.
+    // i admit here i brought in some sounds from the previous project.
+    // i feel the UX needs the audio touches.
     func loadCorrectDing() {
         let pathToSoundFile = Bundle.main.path(forResource: "CorrectDing", ofType: "wav")
         let soundURL = URL(fileURLWithPath: pathToSoundFile!)
@@ -164,6 +179,15 @@ class ViewController: UIViewController {
         AudioServicesPlaySystemSound(gameSound1)
     }
     
+    func loadEndGameSound() {
+        let pathToSoundFile = Bundle.main.path(forResource: "Claps1", ofType: "wav")
+        let soundURL = URL(fileURLWithPath: pathToSoundFile!)
+        AudioServicesCreateSystemSoundID(soundURL as CFURL, &claps1)
+    }
+    
+    func playEndGameSound() {
+        AudioServicesPlaySystemSound(claps1)
+    }
 
 }
 
