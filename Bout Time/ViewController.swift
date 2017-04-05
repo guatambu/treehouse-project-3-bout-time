@@ -237,7 +237,6 @@ class ViewController: UIViewController {
     
     func updateTimer() {
         if seconds < 1 {
-            timer.invalidate()
             displayFinalScore()
         } else {
             seconds -= 1
@@ -252,7 +251,7 @@ class ViewController: UIViewController {
     }
     
     
-    
+   //
 
     
     
@@ -303,6 +302,7 @@ class ViewController: UIViewController {
     
 // function to properly display final score at game's end and give chance to start a new game
     func displayFinalScore() {
+        timer.invalidate()
         yourScore.isHidden = false
         finalScore.isHidden = false
         finalScore.text = "\(correctAnswers)/\(roundsPerGame)"
