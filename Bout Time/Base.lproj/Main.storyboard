@@ -154,21 +154,20 @@
                                 <rect key="frame" x="16" y="531" width="343" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HQj-dj-1Vg">
-                                        <rect key="frame" x="47" y="13" width="250" height="60"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
-                                        <state key="normal" image="next_round_fail.png"/>
-                                        <connections>
-                                            <action selector="failOnToNextRound" destination="BYZ-38-t0r" eventType="touchUpInside" id="YlT-EG-ejD"/>
-                                            <action selector="nextRoundFail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fe6-xo-0UB"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OeA-D6-9iY">
                                         <rect key="frame" x="47" y="13" width="250" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                         <state key="normal" image="next_round_success.png"/>
                                         <connections>
-                                            <action selector="correctOnToNextRound" destination="BYZ-38-t0r" eventType="touchUpInside" id="eBr-9f-pSg"/>
+                                            <action selector="successNextRound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MQ8-ME-AbC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HQj-dj-1Vg">
+                                        <rect key="frame" x="47" y="13" width="250" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                        <state key="normal" image="next_round_fail.png"/>
+                                        <connections>
+                                            <action selector="failNextRound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="93g-tZ-N1d"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9pe-jg-EPM">
@@ -203,7 +202,7 @@
                                 <rect key="frame" x="92.5" y="360" width="190" height="60"/>
                                 <state key="normal" image="play_again.png"/>
                                 <connections>
-                                    <action selector="playAgainButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PMI-2i-Ll3"/>
+                                    <action selector="playAgain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5EG-r8-VTt"/>
                                 </connections>
                             </button>
                         </subviews>

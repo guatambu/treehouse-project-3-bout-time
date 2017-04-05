@@ -52,40 +52,56 @@ class ViewController: UIViewController {
     
 // timelineEvent1 UIView
     @IBAction func downFullButton(_ sender: UIButton) {
+        print("hello down full")
     }
 // timelineEvent2 UIView
     @IBAction func upHalfButton1(_ sender: UIButton) {
+        print("hello up half 1")
     }
     @IBAction func downHalfButton1(_ sender: Any) {
+        print("hello down half 1")
     }
 // timelineEvent3 UIView
     @IBAction func upHalfButton2(_ sender: UIButton) {
+        print("hello up half 2")
     }
     @IBAction func downHalffButton2(_ sender: UIButton) {
+        print("hello down half 2")
     }
 // timelineEvent4 UIView
     @IBAction func upFullButton(_ sender: UIButton) {
+        print("hello up full")
     }
 
 // Next Round Correct Button wiring
-    @IBAction func correctOnToNextRound() {
-       // nextRound()
-        
+
+    @IBAction func failNextRound(_ sender: UIButton) {
+        nextRound()
     }
+    
+    
+
 
 
 // Next Round Incorrect Button wiring
-    @IBAction func failOnToNextRound() {
-        //nextRound()
-        
+
+    @IBAction func successNextRound(_ sender: UIButton) {
+        nextRound()
     }
+    
+    
+        
+
 
     
 
 // Play Again Button wiring
-    @IBAction func playAgainButton() {
-        
+
+    @IBAction func playAgain(_ sender: UIButton) {
+        playNewGame()
     }
+    
+        
 
 
 
@@ -125,9 +141,9 @@ class ViewController: UIViewController {
     
     override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
         if event?.subtype == UIEventSubtype.motionShake {
-            //checkAnswer()
-            nextRound()
-            roundsPlayed += 1
+            checkAnswer()
+            //nextRound()
+            // roundsPlayed += 1
         }
     }
     
@@ -194,12 +210,17 @@ class ViewController: UIViewController {
         if roundsPlayed == roundsPerGame {
             // Game = over
             displayFinalScore()
+            incorrectNextRound.isHidden = true
+            correctNextRound.isHidden = true
         } else {
             // Game continues
             eventGeneratorTimlineDisplay1()
             eventGeneratorTimlineDisplay2()
             eventGeneratorTimlineDisplay3()
             eventGeneratorTimlineDisplay4()
+            timerDisplay.isHidden = false
+            incorrectNextRound.isHidden = true
+            correctNextRound.isHidden = true
        }
         
     }
@@ -241,15 +262,9 @@ class ViewController: UIViewController {
         view3.isHidden = false
         view4.isHidden = false
         timerDisplay.isHidden = false
+        instructions.isHidden = false
         loadGameStartSound()
         playGameStartSound()
-        //downFull.isHidden = false
-        //upFull.isHidden = false
-        //upHalf1.isHidden = false
-        //upHalf2.isHidden = false
-        //downHalf1.isHidden = false
-        //downHalf2.isHidden = false
-
     }
     
     
