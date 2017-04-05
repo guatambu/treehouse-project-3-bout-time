@@ -217,9 +217,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="correctNextRound" destination="OeA-D6-9iY" id="3qy-Jr-6IB"/>
+                        <outlet property="correctNextRound" destination="OeA-D6-9iY" id="EWy-rS-ihy"/>
                         <outlet property="finalScore" destination="lGs-GN-GR8" id="R8q-hn-Cjg"/>
-                        <outlet property="incorrectNextRound" destination="HQj-dj-1Vg" id="gJZ-Cu-Dyy"/>
+                        <outlet property="incorrectNextRound" destination="HQj-dj-1Vg" id="K1f-mk-nlM"/>
                         <outlet property="instructions" destination="Qe7-4h-Bq0" id="7Qq-xp-BWz"/>
                         <outlet property="playAgain" destination="BEg-0g-Zm0" id="syS-ZN-SIU"/>
                         <outlet property="timelineDisplay1" destination="Puq-Wl-50c" id="5oc-J4-kdG"/>

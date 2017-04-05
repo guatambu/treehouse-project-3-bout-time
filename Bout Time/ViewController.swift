@@ -52,25 +52,44 @@ class ViewController: UIViewController {
     
 // timelineEvent1 UIView
     @IBAction func downFullButton(_ sender: UIButton) {
-        print("hello down full")
+        let text1 = timelineDisplay1.text
+        let text2 = timelineDisplay2.text
+        timelineDisplay1.text = text2
+        timelineDisplay2.text = text1
+
     }
 // timelineEvent2 UIView
     @IBAction func upHalfButton1(_ sender: UIButton) {
-        print("hello up half 1")
+        let text1 = timelineDisplay1.text
+        let text2 = timelineDisplay2.text
+        timelineDisplay1.text = text2
+        timelineDisplay2.text = text1
     }
     @IBAction func downHalfButton1(_ sender: Any) {
-        print("hello down half 1")
+        let text2 = timelineDisplay2.text
+        let text3 = timelineDisplay3.text
+        timelineDisplay3.text = text2
+        timelineDisplay2.text = text3
     }
 // timelineEvent3 UIView
     @IBAction func upHalfButton2(_ sender: UIButton) {
-        print("hello up half 2")
+        let text2 = timelineDisplay2.text
+        let text3 = timelineDisplay3.text
+        timelineDisplay3.text = text2
+        timelineDisplay2.text = text3
     }
     @IBAction func downHalffButton2(_ sender: UIButton) {
-        print("hello down half 2")
+        let text3 = timelineDisplay3.text
+        let text4 = timelineDisplay4.text
+        timelineDisplay3.text = text4
+        timelineDisplay4.text = text3
     }
 // timelineEvent4 UIView
     @IBAction func upFullButton(_ sender: UIButton) {
-        print("hello up full")
+        let text3 = timelineDisplay3.text
+        let text4 = timelineDisplay4.text
+        timelineDisplay3.text = text4
+        timelineDisplay4.text = text3
     }
 
 // Next Round Correct Button wiring
