@@ -236,9 +236,22 @@ class ViewController: UIViewController {
     }
     
     func updateTimer() {
-        seconds -= 1
-        timerDisplay.text = "\(seconds)"
+        if seconds < 1 {
+            timer.invalidate()
+            displayFinalScore()
+        } else {
+            seconds -= 1
+            timerDisplay.text = timerAppearance(time: TimeInterval(seconds))
+        }
     }
+    
+    func timerAppearance(time:TimeInterval) -> String {
+        let minutes = Int(time) / 60 % 60
+        let seconds = Int(time) % 60
+        return String(format:"%2i:%02i", minutes, seconds)
+    }
+    
+    
     
 
     
