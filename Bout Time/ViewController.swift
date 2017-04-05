@@ -249,14 +249,14 @@ class ViewController: UIViewController {
         let eventOrder4 = event4.order
         
         if (eventOrder1 < eventOrder2) && (eventOrder2 < eventOrder3) && (eventOrder3 < eventOrder4) {
-            //loadCorrectDing()
-            //playCorrectDing()
+            // loadCorrectDing()
+            // playCorrectDing()
             correctAnswers += 1
             correctNextRound.isHidden = false
 
         } else {
-            //loadIncorrectBuzz()
-            //playIncorrectBuzz()
+            // loadIncorrectBuzz()
+            // playIncorrectBuzz()
             incorrectNextRound.isHidden = false
         }
     }
@@ -326,15 +326,6 @@ class ViewController: UIViewController {
     // audio sounds functions setup.
     // i admit here i brought in some sounds from the previous project.
     // i feel the UX needs the audio touches.
-    func loadCorrectDing() {
-        let pathToSoundFile = Bundle.main.path(forResource: "CorrectDing", ofType: "wav")
-        let soundURL = URL(fileURLWithPath: pathToSoundFile!)
-        AudioServicesCreateSystemSoundID(soundURL as CFURL, &correctDing)
-    }
-    
-    func playCorrectDing() {
-        AudioServicesPlaySystemSound(correctDing)
-    }
     
     func loadIncorrectBuzz() {
         let pathToSoundFile = Bundle.main.path(forResource: "IncorrectBuzz", ofType: "wav")
@@ -363,6 +354,16 @@ class ViewController: UIViewController {
     }
     
     func playEndGameSound() {
+        AudioServicesPlaySystemSound(claps1)
+    }
+    
+    func loadCorrectDing() {
+        let pathToSoundFile = Bundle.main.path(forResource: "CorrectDing", ofType: "wav")
+        let soundURL = URL(fileURLWithPath: pathToSoundFile!)
+        AudioServicesCreateSystemSoundID(soundURL as CFURL, &correctDing)
+    }
+    
+    func playCorrectDing() {
         AudioServicesPlaySystemSound(claps1)
     }
 
