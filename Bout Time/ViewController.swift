@@ -56,6 +56,12 @@ class ViewController: UIViewController {
         let text2 = timelineDisplay2.text
         timelineDisplay1.text = text2
         timelineDisplay2.text = text1
+        let eventOrder1 = event1.order
+        let eventOrder2 = event2.order
+        event1.order = eventOrder2
+        event2.order = eventOrder1
+        print(event1.order)
+        print(event2.order)
 
     }
 // timelineEvent2 UIView
@@ -64,12 +70,24 @@ class ViewController: UIViewController {
         let text2 = timelineDisplay2.text
         timelineDisplay1.text = text2
         timelineDisplay2.text = text1
+        let eventOrder1 = event1.order
+        let eventOrder2 = event2.order
+        event1.order = eventOrder2
+        event2.order = eventOrder1
+        print(event1.order)
+        print(event2.order)
     }
     @IBAction func downHalfButton1(_ sender: Any) {
         let text2 = timelineDisplay2.text
         let text3 = timelineDisplay3.text
         timelineDisplay3.text = text2
         timelineDisplay2.text = text3
+        let eventOrder2 = event2.order
+        let eventOrder3 = event3.order
+        event2.order = eventOrder3
+        event3.order = eventOrder2
+        print(event2.order)
+        print(event3.order)
     }
 // timelineEvent3 UIView
     @IBAction func upHalfButton2(_ sender: UIButton) {
@@ -77,12 +95,24 @@ class ViewController: UIViewController {
         let text3 = timelineDisplay3.text
         timelineDisplay3.text = text2
         timelineDisplay2.text = text3
+        let eventOrder2 = event2.order
+        let eventOrder3 = event3.order
+        event2.order = eventOrder3
+        event3.order = eventOrder2
+        print(event2.order)
+        print(event3.order)
     }
     @IBAction func downHalffButton2(_ sender: UIButton) {
         let text3 = timelineDisplay3.text
         let text4 = timelineDisplay4.text
         timelineDisplay3.text = text4
         timelineDisplay4.text = text3
+        let eventOrder3 = event3.order
+        let eventOrder4 = event4.order
+        event3.order = eventOrder4
+        event4.order = eventOrder3
+        print(event3.order)
+        print(event4.order)
     }
 // timelineEvent4 UIView
     @IBAction func upFullButton(_ sender: UIButton) {
@@ -90,6 +120,12 @@ class ViewController: UIViewController {
         let text4 = timelineDisplay4.text
         timelineDisplay3.text = text4
         timelineDisplay4.text = text3
+        let eventOrder3 = event3.order
+        let eventOrder4 = event4.order
+        event3.order = eventOrder4
+        event4.order = eventOrder3
+        print(event3.order)
+        print(event4.order)
     }
 
 // Next Round Correct Button wiring
