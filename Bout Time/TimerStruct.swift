@@ -10,7 +10,4 @@ import Foundation
 
 // this contains the timer struct
 
-struct Timer {
-    // placeholder for now
-    var timer = "0"
-}
+

@@ -75,7 +75,7 @@
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
                                         <state key="normal" title="downHalfButton1" image="down_half.png" backgroundImage="down_half_selected.png"/>
                                         <connections>
-                                            <action selector="downHalfButton1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F6H-1C-2i3"/>
+                                            <action selector="downHalfButton1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yfq-bL-HJh"/>
                                         </connections>
                                     </button>
                                 </subviews>
