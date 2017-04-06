@@ -47,6 +47,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var timelineDisplay3: UILabel!
     @IBOutlet weak var timelineDisplay4: UILabel!
     @IBOutlet weak var instructions: UILabel!
+    @IBOutlet weak var tapToViewInstructions: UILabel!
     @IBOutlet weak var finalScore: UILabel!
     @IBOutlet weak var yourScore: UILabel!
     @IBOutlet weak var playAgain: UIButton!
@@ -141,6 +142,13 @@ class ViewController: UIViewController {
     @IBAction func failNextRound(_ sender: UIButton) {
         nextRound()
         runTimer()
+        if roundsPlayed < roundsPerGame {
+            instructions.isHidden = false
+            tapToViewInstructions.isHidden = true
+        } else {
+            instructions.isHidden = true
+            tapToViewInstructions.isHidden = true
+        }
     }
     
 
@@ -149,6 +157,13 @@ class ViewController: UIViewController {
     @IBAction func successNextRound(_ sender: UIButton) {
         nextRound()
         runTimer()
+        if roundsPlayed < roundsPerGame {
+            instructions.isHidden = false
+            tapToViewInstructions.isHidden = true
+        } else {
+            instructions.isHidden = true
+            tapToViewInstructions.isHidden = true
+        }
     }
     
 
@@ -179,6 +194,7 @@ class ViewController: UIViewController {
         view3.isHidden = false
         view4.isHidden = false
         timerDisplay.isHidden = false
+        tapToViewInstructions.isHidden = true
         loadGameStartSound()
         playGameStartSound()
         runTimer()
@@ -272,9 +288,13 @@ class ViewController: UIViewController {
             playCorrectDing()
             correctAnswers += 1
             correctNextRound.isHidden = false
+            tapToViewInstructions.isHidden = false
+            instructions.isHidden = true
         } else {
             playIncorrectBuzz()
             incorrectNextRound.isHidden = false
+            tapToViewInstructions.isHidden = false
+            instructions.isHidden = true
         }
     }
 
@@ -311,6 +331,7 @@ class ViewController: UIViewController {
         view4.isHidden = true
         timerDisplay.isHidden = true
         instructions.isHidden = true
+        tapToViewInstructions.isHidden = true
         loadEndGameSound()
         playEndGameSound()
     }

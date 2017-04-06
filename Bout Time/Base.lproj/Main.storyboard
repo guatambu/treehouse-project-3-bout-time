@@ -184,6 +184,13 @@
                                         <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap events to learn more" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ar2-ND-LS3">
+                                        <rect key="frame" x="68" y="94" width="208" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofu-bY-0du">
@@ -217,6 +224,7 @@
                         <outlet property="incorrectNextRound" destination="HQj-dj-1Vg" id="K1f-mk-nlM"/>
                         <outlet property="instructions" destination="Qe7-4h-Bq0" id="7Qq-xp-BWz"/>
                         <outlet property="playAgain" destination="BEg-0g-Zm0" id="syS-ZN-SIU"/>
+                        <outlet property="tapToViewInstructions" destination="Ar2-ND-LS3" id="B5C-6S-eFl"/>
                         <outlet property="timelineDisplay1" destination="Puq-Wl-50c" id="5oc-J4-kdG"/>
                         <outlet property="timelineDisplay2" destination="2X2-5Y-2XT" id="hvk-IU-1Ye"/>
                         <outlet property="timelineDisplay3" destination="Xzx-Fm-Dkq" id="NDi-7a-YiC"/>
