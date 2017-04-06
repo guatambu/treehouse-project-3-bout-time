@@ -35,8 +35,6 @@ class ViewController: UIViewController {
     var isTimerRunning = false
     
     
-    
-    
 // timeline event options display UIView IBOutlets wiring
     @IBOutlet weak var view1: ViewRoundedCorners!
     @IBOutlet weak var view2: ViewRoundedCorners!
@@ -138,7 +136,6 @@ class ViewController: UIViewController {
     }
 
 // Next Round Correct Button wiring
-
     @IBAction func failNextRound(_ sender: UIButton) {
         nextRound()
         runTimer()
@@ -151,9 +148,7 @@ class ViewController: UIViewController {
         }
     }
     
-
 // Next Round Incorrect Button wiring
-
     @IBAction func successNextRound(_ sender: UIButton) {
         nextRound()
         runTimer()
@@ -165,10 +160,8 @@ class ViewController: UIViewController {
             tapToViewInstructions.isHidden = true
         }
     }
-    
 
 // Play Again Button wiring
-
     @IBAction func playAgain(_ sender: UIButton) {
         timer.invalidate()
         seconds = 60
@@ -249,7 +242,6 @@ class ViewController: UIViewController {
 // timer functionality
     func runTimer() {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: (#selector(ViewController.updateTimer)), userInfo: nil, repeats: true)
-    
     }
     
     func updateTimer() {
@@ -266,12 +258,6 @@ class ViewController: UIViewController {
         let seconds = Int(time) % 60
         return String(format:"%2i:%02i", minutes, seconds)
     }
-    
-    
-   //
-
-    
-    
     
     
 // function to check timeline order in a round
@@ -365,12 +351,11 @@ class ViewController: UIViewController {
     }
     
     
-    // audio sounds functions setup.
-    // i admit here i brought in some sounds from the previous project.
-    // i feel the UX needs the audio touches.
+// audio sounds functions setup.
+// i admit here i brought in some sounds from the previous project.
+// i feel the UX needs the audio touches.
     
-    
-    // incorrect button tap sound effects
+// incorrect button tap sound effects
     func playIncorrectBuzz() {
         let incorrectBuzz = Bundle.main.path(forResource: "IncorrectBuzz", ofType: "wav")
         do {
@@ -380,7 +365,7 @@ class ViewController: UIViewController {
         
         }
     }
-    // correct button tap sound effects
+// correct button tap sound effects
     func playCorrectDing() {
         let correctDing = Bundle.main.path(forResource: "CorrectDing", ofType: "wav")
         do {
@@ -390,9 +375,8 @@ class ViewController: UIViewController {
             
         }
     }
-    
 
-    // start and end of game sounds
+// start and end of game sounds
     func loadGameStartSound() {
         let pathToSoundFile = Bundle.main.path(forResource: "GameSound1", ofType: "wav")
         let soundURL = URL(fileURLWithPath: pathToSoundFile!)
@@ -413,14 +397,5 @@ class ViewController: UIViewController {
         AudioServicesPlaySystemSound(claps1)
     }
     
-
-
 }
-
-
-
-
-
-
-
 
