@@ -9,6 +9,8 @@
 import UIKit
 import GameKit
 import AudioToolbox
+import AVFoundation
+
 
 class ViewController: UIViewController {
 // let's set up our necessary variables and respective instances
@@ -19,8 +21,7 @@ class ViewController: UIViewController {
     var timelineSource = TimelineSource()
     var removedArrayItem = TimelineEvent()
     // audio variables
-    var correctDing: SystemSoundID = 0
-    var incorrectBuzz: SystemSoundID = 0
+    var audioPlayer = AVAudioPlayer()
     var gameSound1: SystemSoundID = 0
     var claps1: SystemSoundID = 0
     // global event variables for UIView displays
@@ -268,14 +269,11 @@ class ViewController: UIViewController {
         let eventOrder4 = event4.order
         
         if (eventOrder1 < eventOrder2) && (eventOrder2 < eventOrder3) && (eventOrder3 < eventOrder4) {
-            // loadCorrectDing()
-            // playCorrectDing()
+            playCorrectDing()
             correctAnswers += 1
             correctNextRound.isHidden = false
-
         } else {
-            // loadIncorrectBuzz()
-            // playIncorrectBuzz()
+            playIncorrectBuzz()
             incorrectNextRound.isHidden = false
         }
     }
@@ -350,28 +348,30 @@ class ViewController: UIViewController {
     // i admit here i brought in some sounds from the previous project.
     // i feel the UX needs the audio touches.
     
-    //MARK:  audio doesn't play in game... why?
-    func loadIncorrectBuzz() {
-        let pathToSoundFile = Bundle.main.path(forResource: "IncorrectBuzz", ofType: "wav")
-        let soundURL = URL(fileURLWithPath: pathToSoundFile!)
-        AudioServicesCreateSystemSoundID(soundURL as CFURL, &incorrectBuzz)
-    }
     
+    // incorrect button tap sound effects
     func playIncorrectBuzz() {
-        AudioServicesPlaySystemSound(incorrectBuzz)
+        let incorrectBuzz = Bundle.main.path(forResource: "IncorrectBuzz", ofType: "wav")
+        do {
+            try audioPlayer = AVAudioPlayer(contentsOf: URL(fileURLWithPath: incorrectBuzz!))
+            audioPlayer.play()
+        } catch {
+        
+        }
     }
-    
-    //MARK:  audio doesn't play in game... why?
-    func loadCorrectDing() {
-        let pathToSoundFile = Bundle.main.path(forResource: "CorrectDing", ofType: "wav")
-        let soundURL = URL(fileURLWithPath: pathToSoundFile!)
-        AudioServicesCreateSystemSoundID(soundURL as CFURL, &correctDing)
-    }
-    
+    // correct button tap sound effects
     func playCorrectDing() {
-        AudioServicesPlaySystemSound(correctDing)
+        let correctDing = Bundle.main.path(forResource: "CorrectDing", ofType: "wav")
+        do {
+            try audioPlayer = AVAudioPlayer(contentsOf: URL(fileURLWithPath: correctDing!))
+            audioPlayer.play()
+        } catch {
+            
+        }
     }
+    
 
+    // start and end of game sounds
     func loadGameStartSound() {
         let pathToSoundFile = Bundle.main.path(forResource: "GameSound1", ofType: "wav")
         let soundURL = URL(fileURLWithPath: pathToSoundFile!)
